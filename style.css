@@ -838,6 +838,7 @@ a {
   padding: 25px;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-out;
@@ -950,4 +951,16 @@ a {
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
+}
+
+#confirm-pass{
+    font-size: 12px !important;
+    color: red !important;
+
+}
+
+.div-error{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

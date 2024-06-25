@@ -59,15 +59,15 @@
                       <i class="uil uil-times form_close"></i>
                       <!-- Login Form -->
                       <div class="form login_form">
-                        <form action="#">
+                        <form onsubmit="logIn()">
                           <h2>Login</h2>
               
                           <div class="input_box">
-                            <input type="email" placeholder="Enter your email" required />
+                            <input class="login-1" type="email" placeholder="Enter your email" required />
                             <i class="uil uil-envelope-alt email"></i>
                           </div>
                           <div class="input_box">
-                            <input type="password" placeholder="Enter your password" required />
+                            <input class="login-2" type="password" placeholder="Enter your password" required />
                             <i class="uil uil-lock password"></i>
                             <i class="uil uil-eye-slash pw_hide"></i>
                           </div>
@@ -80,7 +80,7 @@
                             <a href="#" class="forgot_pw">Forgot password?</a>
                           </div>
               
-                          <button class="button">Login Now</button>
+                          <button type="submit" class="button">Login Now</button>
               
                           <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
                         </form>
@@ -88,25 +88,26 @@
               
                       <!-- Signup Form -->
                       <div class="form signup_form">
-                        <form action="#">
+                        <form onsubmit="signup()">
                           <h2>Signup</h2>
               
                           <div class="input_box">
-                            <input type="email" placeholder="Enter your email" required />
+                            <input class="signup-1" type="email" placeholder="Enter your email" required />
                             <i class="uil uil-envelope-alt email"></i>
                           </div>
                           <div class="input_box">
-                            <input type="password" placeholder="Create password" required />
+                            <input class="signup-2" type="password" placeholder="Create password" required />
                             <i class="uil uil-lock password"></i>
                             <i class="uil uil-eye-slash pw_hide"></i>
                           </div>
                           <div class="input_box">
-                            <input type="password" placeholder="Confirm password" required />
+                            <input class="signup-3" type="password" placeholder="Confirm password" required />
                             <i class="uil uil-lock password"></i>
+                            <p class="confir" id="confirm-pass"></p>
                             <i class="uil uil-eye-slash pw_hide"></i>
                           </div>
               
-                          <button class="button">Signup Now</button>
+                          <button type="submit" class="button signup-btn">Signup Now</button>
               
                           <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
                         </form>
@@ -645,6 +646,7 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
     </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="index.js"></script>
 
 
