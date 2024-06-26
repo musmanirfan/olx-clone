@@ -40,6 +40,12 @@ ul {
     background-color: #ffff;
 }
 
+.upper-haed{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
 
 .opt {
     display: flex;
@@ -964,3 +970,12 @@ a {
     align-items: center;
     gap: 8px;
 }
+
+#logout{
+    display: none;
+}
+
+.layout{
+    display: none;
+}
+

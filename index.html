@@ -22,10 +22,13 @@
     <!-- navbar started -->
     <header>
         <div class="nav">
-            <div class="opt">
-                <img src="images/logo.png" alt="logo" />
-                <p><i class="fas fa-car fa-lg"></i> Motors</p>
-                <p><i class="fas fa-building fa-lg"></i> Property</p>
+            <div class="upper-haed">
+                <div class="opt">
+                    <img src="images/logo.png" alt="logo" />
+                    <p><i class="fas fa-car fa-lg"></i> Motors</p>
+                    <p><i class="fas fa-building fa-lg"></i> Property</p>
+                </div>
+                <h5 class="username"></h5>
             </div>
             <div class="nav-2nd">
                 <div class="custom-select" style="width:300px;">
@@ -51,69 +54,72 @@
                 </div>
                 <div class="nav-btn-login nav_item">
                     <a href="#" class="nav_link btn btn-link" id="form-open">Login</a>
+                    <a onclick="logout()" href="#" class="nav_link btn btn-link logout" id="logout">logout</a>
                     <!-- <button onclick="login()" type="button" class="btn btn-link">
                         <a href="home.html"></a>Login</button> -->
                 </div>
                 <section class="home">
                     <div class="form_container">
-                      <i class="uil uil-times form_close"></i>
-                      <!-- Login Form -->
-                      <div class="form login_form">
-                        <form onsubmit="logIn()">
-                          <h2>Login</h2>
-              
-                          <div class="input_box">
-                            <input class="login-1" type="email" placeholder="Enter your email" required />
-                            <i class="uil uil-envelope-alt email"></i>
-                          </div>
-                          <div class="input_box">
-                            <input class="login-2" type="password" placeholder="Enter your password" required />
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw_hide"></i>
-                          </div>
-              
-                          <div class="option_field">
-                            <span class="checkbox">
-                              <input type="checkbox" id="check" />
-                              <label for="check">Remember me</label>
-                            </span>
-                            <a href="#" class="forgot_pw">Forgot password?</a>
-                          </div>
-              
-                          <button type="submit" class="button">Login Now</button>
-              
-                          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
-                        </form>
-                      </div>
-              
-                      <!-- Signup Form -->
-                      <div class="form signup_form">
-                        <form onsubmit="signup()">
-                          <h2>Signup</h2>
-              
-                          <div class="input_box">
-                            <input class="signup-1" type="email" placeholder="Enter your email" required />
-                            <i class="uil uil-envelope-alt email"></i>
-                          </div>
-                          <div class="input_box">
-                            <input class="signup-2" type="password" placeholder="Create password" required />
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw_hide"></i>
-                          </div>
-                          <div class="input_box">
-                            <input class="signup-3" type="password" placeholder="Confirm password" required />
-                            <i class="uil uil-lock password"></i>
-                            <p class="confir" id="confirm-pass"></p>
-                            <i class="uil uil-eye-slash pw_hide"></i>
-                          </div>
-              
-                          <button type="submit" class="button signup-btn">Signup Now</button>
-              
-                          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
-                        </form>
-                      </div>
+                        <i class="uil uil-times form_close"></i>
+                        <!-- Login Form -->
+                        <div class="form login_form">
+                            <form onsubmit="logIn()">
+                                <h2>Login</h2>
+
+                                <div class="input_box">
+                                    <input class="login-1" type="email" placeholder="Enter your email" required />
+                                    <i class="uil uil-envelope-alt email"></i>
+                                </div>
+                                <div class="input_box">
+                                    <input class="login-2" type="password" placeholder="Enter your password" required />
+                                    <i class="uil uil-lock password"></i>
+                                    <i class="uil uil-eye-slash pw_hide"></i>
+                                </div>
+
+                                <div class="option_field">
+                                    <span class="checkbox">
+                                        <input type="checkbox" id="check" />
+                                        <label for="check">Remember me</label>
+                                    </span>
+                                    <a href="#" class="forgot_pw">Forgot password?</a>
+                                </div>
+
+                                <button type="submit" class="button">Login Now</button>
+
+                                <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Signup Form -->
+                        <div class="form signup_form">
+                            <form onsubmit="signup()">
+                                <h2>Signup</h2>
+
+                                <div class="input_box">
+                                    <input class="signup-1" type="email" placeholder="Enter your email" required />
+                                    <i class="uil uil-envelope-alt email"></i>
+                                </div>
+                                <div class="input_box">
+                                    <input class="signup-2" type="password" placeholder="Create password" required />
+                                    <i class="uil uil-lock password"></i>
+                                    <i class="uil uil-eye-slash pw_hide"></i>
+                                </div>
+                                <div class="input_box">
+                                    <input class="signup-3" type="password" placeholder="Confirm password" required />
+                                    <i class="uil uil-lock password"></i>
+                                    <p class="confir" id="confirm-pass"></p>
+                                    <i class="uil uil-eye-slash pw_hide"></i>
+                                </div>
+
+                                <button type="submit" class="button signup-btn">Signup Now</button>
+
+                                <div class="login_signup">Already have an account? <a href="#" id="login">Login</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                  </section>
+                </section>
                 <div class="nav-btn-sell">
                     <img width="95" height="45" src="images/sell border.png" alt="" />
                     <div class="nav-btn-sell-dis">
@@ -646,7 +652,7 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="index.js"></script>
 
 
